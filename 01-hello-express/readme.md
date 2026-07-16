@@ -42,3 +42,14 @@ Print Success Messages
         ↓
 Wait for Client Requests
 */
+Whenever you build an Express app, think in 5 steps:
+
+Import Express → Bring the Express library.
+
+Create App → Create your web application.
+
+Choose a Port → Decide where the server will run.
+
+Start the Server → Begin listening for requests.
+
+Create Routes → Decide what happens when users visit URLs.
