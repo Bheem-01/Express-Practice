@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get vs Post</title>
+</head>
+<body>
+    <h2>GET Request Form</h2>
+    <form method = "get" action = "http://localhost:3000/register"> <!-- This answers the question: How should the browser send the data?
+        "Send the form data as query parameters in the URL." Username : Bheem
+
+Password : 12345
+
+When they click Submit, the browser automatically creates this URL:
+
+/register?username=Bheem&password=12345
+
+Notice:
+
+The data becomes part of the URL.
+ction="/register"
+
+This answers the question:
+
+Where should the browser send the form?
+
+When the user clicks Submit, the browser makes a request to:
+
+/register
+
+So Express must have a matching route.
+
+Example:
+
+app.get("/register", (req, res) => {
+
+});-->
+        <input placeholder = "enter username" name = "user" type = "text">
+        <input placeholder = "enter password" name = "password" type = "password">
+        <button>Submit</button>
+
+        </form>
+
+        <h2>POST Request Form </h2>
+        <form method = "post" action= "http://localhost:3000/register">
+            <input placeholder = "enter username" name = "user" type = "text">
+            <input placeholder = "enter password" name = "password" type = "password">
+            <button>Submit</button>
+
+        </form>
+</body>
+</html>
+<!-- /register?user=Bheem&password=1234 -->
