@@ -1,0 +1,45 @@
+<!---🟢 Question 2 - Student Registration
+
+Fields:
+
+Name
+Roll Number
+Course
+GET Version
+
+Display all values after submission.
+
+POST Version
+
+Display the same values after submission.
+
+Now compare:
+
+Which method is better for registration?
+Why?
+----------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>GET VERSION</h2>
+    <form method = "get" action = "http://localhost:3000/registration">
+     <input placeholder = "enter name" name = "name" type = "text">
+     <input placeholder = "enter rollno" name = "rollno" type = "number">
+     <input placeholder="enter course" name = "course" type = "text">
+     <button>Register</button>
+    </form>
+
+    <h2>POST VERSION</h2>
+    <form method = "post" action = "http://localhost:3000/registration">
+     <input placeholder = "enter name" name = "name" type = "text">
+     <input placeholder = "enter rollno" name = "rollno" type = "number">
+     <input placeholder="enter course" name = "course" type = "text">
+     <button>Register</button>
+     </form>
+</body>
+</html>
